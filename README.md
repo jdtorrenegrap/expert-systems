@@ -20,5 +20,5 @@ Un **sistema experto (SE)** es un software diseñado para emular el razonamiento
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/sistema-experto-muscular.git
+   https://github.com/jdtorrenegrap/expert-systems.git
    ```
