@@ -1,5 +1,5 @@
 import express from 'express';
-import { handleDiagnostic } from '../controllers/regDiagnosticController.js';
+import { handleDiagnostic, handleGetDiagnostic } from '../controllers/regDiagnosticController.js';
 
 const routesExpertSystems = express.Router();
 
@@ -8,5 +8,5 @@ routesExpertSystems.get('/', (req, res) => {
 });
 
 routesExpertSystems.post('/diagnostic', handleDiagnostic)
-
+routesExpertSystems.get('/diagnostic/:dni', handleGetDiagnostic)
 export default routesExpertSystems

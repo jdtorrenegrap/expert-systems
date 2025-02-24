@@ -26,8 +26,9 @@ async function registerDiagnostic(name, lastname, dni, diagnosis) {
 async function getDiagnostic(dni) {
     try {
         const user = await sql`
-            SELECT * FROM get_user_diagnosis(${dni})
-        `
+            SELECT * FROM get_user_diagnosis(${dni})`
+        return user
+        
     } catch (error) {
         console.error('Error al obtener los diagnósticos:', error)
         throw error
