@@ -4,7 +4,7 @@ import { handleDiagnostic, handleGetDiagnostic } from '../controllers/regDiagnos
 const routesExpertSystems = express.Router();
 
 routesExpertSystems.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Welcome to the Expert Systems API!');
 });
 
 routesExpertSystems.post('/diagnostic', handleDiagnostic)
