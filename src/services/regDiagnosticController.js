@@ -3,10 +3,18 @@ import { runRules } from './rules.js'
 
 export const handleDiagnostic = async (req, res) => {
 
-    const { username, dni, symptoms } = req.body
+    const { username, dni, question_1, question_2, question_3, question_4, question_5 } = req.body
 
     // Proccess the diagnostic
     try {
+        const symptoms = {
+            question_1,
+            question_2,
+            question_3,
+            question_4,
+            question_5
+        }
+        
         const results = await runRules(symptoms)
         const diagnostics = results.events.map(event => event.params.diagnostico)
 
