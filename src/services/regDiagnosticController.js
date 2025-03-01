@@ -7,6 +7,7 @@ export const handleDiagnostic = async (req, res) => {
 
     // Proccess the diagnostic
     try {
+        console.log("JSON: ", req.body)
         const symptoms = {
             question_1,
             question_2,
@@ -14,7 +15,7 @@ export const handleDiagnostic = async (req, res) => {
             question_4,
             question_5
         }
-        
+
         const results = await runRules(symptoms)
         const diagnostics = results.events.map(event => event.params.diagnostico)
 
