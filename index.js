@@ -1,11 +1,12 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 import { PORT } from './src/config/config.js'
-import routesExpertSystems from './src/routes/routes.js'
+import routesExpertSystems from './src/routes/diagnosticRoutes.js'
 
 
 const app = express()
-app.use(bodyParser.json()) // esto es un middleware que permite leer el body de las peticiones
+app.use(bodyParser.json()) 
+
 
 // Routes
 app.use('/', routesExpertSystems)
