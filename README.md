@@ -1,6 +1,4 @@
-# Ejemplo de Sistema Experto: Sistema Muscular
-
-## Descripción
+## Sistema Muscular
 
 Este proyecto utiliza la herramienta `json-rules-engine` para crear un sistema experto que hace uso de reglas para responder preguntas relacionadas con el sistema muscular. El sistema experto está diseñado para interactuar con el usuario a través de cinco preguntas clave sobre el sistema muscular. Basándose en las respuestas proporcionadas, el sistema ofrece un diagnóstico o recomendación.
 
